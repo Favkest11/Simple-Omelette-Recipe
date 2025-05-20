@@ -1,0 +1,139 @@
+:root{
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-stone-100:hsl(30, 54%, 90%);
+    --clr-stone-150:hsl(30, 18%, 87%);
+    --clr-stone-600:hsl(30, 10%, 34%);
+    --clr-stone-900:hsl(24, 5%, 18%);
+    --clr-brown-800:hsl(14, 45%, 36%);
+    --clr-rose-800:hsl(332, 51%, 32%);
+    --clr-rose-50:hsl(330, 100%, 98%);
+
+
+  --ff-youngserif: 'Young Serif', serif;
+  --ff-outfit: 'Outfit', sans-serif;
+
+    --fw-young_serif:400;
+    
+}
+
+body{
+background-color: var(--clr-stone-100) ;
+}
+main{
+    background-color:var(--clr-white);
+    width: 52%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+h1{
+    font-family: var(--ff-youngserif);
+    font-weight: var(--fw-young_serif);
+    
+    
+}
+h3{
+    font-family: var(--ff-youngserif);
+    font-weight: var(--fw-young_serif);
+    color: var(--clr-rose-800);
+}
+h2{
+    color: var(--clr-brown-800);
+    font-family: var(--ff-youngserif);
+    font-weight: var(--fw-young_serif);
+    padding-left: 20px;
+}
+#p{
+    padding-left: 20px; 
+}
+#section3{
+    padding-left: 40px;
+}
+p,li{
+    font-size: 16px;
+    font-family: var(--ff-outfit);
+}
+img{
+    margin: auto;
+    border-radius: 10px;
+
+}
+.item p{
+display: inline-block;
+
+}
+
+.name{
+    width: 45%;
+    padding-left: 4%;
+}
+.weight{
+    width: 49%;
+    color: var(--clr-brown-800);
+    
+}
+ol li::marker,ul li::marker{
+    color: var(--clr-brown-800);
+    
+}
+ul li,ol li{
+    padding-top: 10px;
+     padding-left: 20px;
+}
+#pt li::marker{
+color: var(--clr-rose-800);
+}
+section{
+    padding-top: 20px;
+}
+@media (max-width: 375px) {
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  p, li {
+    font-size: 13px;
+  }
+  
+  h1, h2, h3 {
+    font-size: smaller;
+  }
+}
+@media (max-width: 1439px) {
+  main {
+    width: 80%;
+    padding: 30px;
+  }
+  
+  p, li {
+    font-size: 14px;
+  }
+  
+  .name {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .weight {
+    width: 100%;
+    padding-top: 10px;
+    color: var(--clr-brown-800);
+  }
+  
+  #section3 {
+    padding-left: 20px;
+  }
+  
+  h2 {
+    padding-left: 10px;
+  }
+  
+  #p {
+    padding-left: 10px;
+  }
+  
+  ul li, ol li {
+    padding-left: 15px;
+  }
+}
